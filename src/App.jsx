@@ -20,7 +20,7 @@ function App() {
 
 	useEffect(() => {
 		if (timeLeft === 0) {
-			audioElement.current.currentTime = 0;
+			// audioElement.current.currentTime = 0;
 			audioElement.current.play();
 			if (currentSessionType === "Session") {
 				setCurrentSessionType("Break");
@@ -77,7 +77,7 @@ function App() {
 	};
 
 	const handleReset = () => {
-		audioElement.current.currentTime = 0;
+		// audioElement.current.currentTime = 0;
 		audioElement.current.pause();
 		clearInterval(intervalId);
 		setIntervalId(null);
