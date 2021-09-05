@@ -1,42 +1,139 @@
+@font-face {
+	font-family: "Roboto", sans-serif;
+	src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Orbitron", sans-serif;
+	src: url(fonts/Orbitron-Medium.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	background-color: #263a63;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	font-family: "Roboto", sans-serif;
+	background-color: #282c34;
+	height: 8vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #eee;
+	text-shadow: 1px 1px 2px #61dafb;
+	text-decoration: none;
+}
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#break-label,
+#session-label {
+	color: #61dafb;
+	padding: 10px;
+	margin: 20px;
+	text-align: center;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+#break-decrement,
+#break-increment,
+#session-decrement,
+#session-increment,
+#start_stop,
+#reset {
+	padding: 10px;
+	color: #61dafb;
+	width: 64px;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+span {
+	font-size: 36px;
+	color: #61dafb;
+
+	padding: 10px;
+}
+
+.iconFCC {
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+
+.react-icons {
+	font-size: 32px;
+	background: none;
+	width: 64px;
+	height: 58px;
+	box-shadow: 2px 2px 2px 2px #11657c, -2px -2px 2px 2px #11657c,
+		inset 2px 2px 2px 2px #11657c, inset -2px -2px 2px 2px #11657c;
+	border-radius: 6px;
+}
+
+#start_stop {
+	width: 128px;
+	margin-right: 20px;
+}
+
+.timerContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 24px auto;
+	padding: 36px;
+	width: 45vw;
+	border: 2px solid #61dafb;
+	border-radius: 32px;
+	height: auto;
+	box-shadow: 2px 2px 2px 2px #11657c, -2px -2px 2px 2px #11657c,
+		inset 2px 2px 2px 2px #11657c, inset -2px -2px 2px 2px #11657c;
+	min-width: 290px;
+}
+
+#timer-label {
+	font-family: "Roboto", sans-serif;
+	font-size: 36px;
+	color: #61dafb;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+#time-left {
+	display: flex;
+	justify-content: center;
+	color: #61dafb;
+	font-family: "Orbitron", sans-serif;
+	font-size: 74px;
+}
+
+.controllContainer {
+	margin-top: 20px;
+}
+
+#break-decrement:hover,
+#break-increment:hover,
+#session-decrement:hover,
+#session-increment:hover,
+#start_stop:hover,
+#reset:hover {
+	color: rgb(236, 213, 6);
+	box-shadow: 2px 2px 2px 2px rgb(236, 213, 6), -2px -2px 2px 2px rgb(236, 213, 6);
 }
