@@ -113,7 +113,7 @@ function App() {
 					playAudio={playAudio}
 				/>
 				<audio id="beep" ref={audioElement}>
-					<source src="./src/alarm.mp3" type="audio/mpeg" />
+					<source src="./src/beep.mp3" type="audio/mpeg" />
 				</audio>
 			</div>
 		</div>
